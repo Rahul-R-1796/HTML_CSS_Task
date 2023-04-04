@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style>
+            h1,h2 {text-align: center;}
+            .main {
+            position: relative;
+            background-color: gainsboro;
+            border: 5px solid black;
+            padding: 30px;
+            top: 100%;
+            
+            }
+            .body1 {
+             position: relative;
+             padding: 10px 10px 10px 50px;
+             border: 3px solid black;
+            } 
+
+            .body2 {
+            position: absolute;
+            top: 200px;
+            left: 700px;
+            width: 200px;
+            height: 200px;
+            padding: 10px 10px 10px 10px;
+            border: 3px solid black;
+            }
+            
+
+
+</style>
+</head>
+<body>
+<div class="main">
+<h1 >Event I</h1>
+<h2>Number Of Available Seats: 23</h2>
+<form class="body1">
+  First name*:<input type="text"
+  name="First Name" placeholder="Enter Your First Name"/><br></br>
+  Last name*:<input type="text"
+  name="Last Name" placeholder="Enter Your Last Name"/><br></br>
+  Email ID*:<input type="text"
+  name="Email ID" placeholder="Enter Your Email Id"/><br></br>
+  Mobile Number*:<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+  Date Of Birth*:<input type="date"
+  name="date"/><br></br>
+
+  Number Of Seats: <br>
+        <select name="dropdown">
+        <option value="select" hidden disabled selected>-select-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select><br></br>
+  First Of the Attendee:<input type="text"
+   name="First Name" placeholder="Enter Your Attendee Name"/><br></br>
+   <input type = "button"
+   name = "Submit" value="Submit" style="font-size: 15px;">
+   <input type = "button"
+   name = "Cancel" value="Cancel" style="font-size: 15px;">
+</form>
+</div>
+<form class="body2">
+    <label for="img">Select image:</label>
+    <input type="file" id="img" name="img" accept="image/*"><br></br>
+    <input type="submit">
+  </form>
