@@ -1,0 +1,11 @@
+eval() in javascript:
+eval() is a built-in function in JavaScript that allows you to evaluate a string of JavaScript code as if it were a part of the current code being executed.
+It takes a string as an argument and executes it as JavaScript code, returning the result of the execution.
+Here's the syntax for eval(): eval(string)
+The eval() method evaluates or executes an argument.
+If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements.
+
+evel () Limitation:
+Executing JavaScript from a string is an BIG security risk.
+With eval(), malicious code can run inside your application without permission.
+With eval(), third-party code can see the scope of your application, which can lead to possible attacks.
