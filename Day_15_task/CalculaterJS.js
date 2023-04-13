@@ -1,5 +1,5 @@
 let equal_pressed = 0;
-let button_input = document.querySelectorAll(".input-button"); 
+let button_input = document.querySelectorAll(".input-button");
 let input = document.getElementById("input");
 let equal = document.getElementById("equal");
 let clear = document.getElementById("clear");
@@ -19,11 +19,41 @@ button_input.forEach((button_class) => {
   });
 });
 
+document.addEventListener("keydown", (event) => {
+  let keyPressed = event.key;
+  let allowedKeys = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "+",
+    "-",
+    "*",
+    "/",
+//    "Enter",
+  ];
+  if (allowedKeys.includes(keyPressed)) {
+    if (equal_pressed == 1) {
+      input.value = "";
+      equal_pressed = 0;
+    }
+    input.value += keyPressed;
+  } else {
+    alert("Invalid Input");
+  }
+});
+
 equal.addEventListener("click", () => {
   equal_pressed = 1;
   let inp_val = input.value;
   try {
-       let solution = eval(inp_val);
+    let solution = eval(inp_val);
     if (Number.isInteger(solution)) {
       input.value = solution;
     } else {
