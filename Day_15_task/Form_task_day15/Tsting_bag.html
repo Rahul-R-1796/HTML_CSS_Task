@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<body>
+    <form id="nameForm">
+        First name: <input type="text" placeholder="Enter your text" name="first_name">
+        <button type="submit">Submit</button>
+    </form>
+    <table id="nameTable">
+        <tr>
+            <th>Name</th>
+        </tr>
+    </table>
+
+    <script>
+          // JavaScript for handling form submission and displaying name list
+          document.getElementById('nameForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // prevent form submission it stops the bag-relode process.
+
+            // Get input value
+            var firstNameInput = document.getElementsByName('first_name')[0];
+            var firstName = firstNameInput.value;
+
+            // Create table row and cell
+            var table = document.getElementById('nameTable');
+            var row = table.insertRow();
+            var cell = row.insertCell();
+            cell.textContent = firstName;
+
+            // Clear input field
+            firstNameInput.value = "";
+        });
+    </script>
+</body>
+</html>

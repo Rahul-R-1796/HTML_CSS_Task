@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table_DOM</title>
+    <link rel="stylesheet" href="DOM_table.css" />
+  </head>
+
+<body>
+  <div class="form-container">
+    <form id="myForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+      <label for="pinCode">Pin Code:</label>
+      <input type="text" id="pinCode" name="pinCode" required>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="food">Choice of Food (select at least 2):</label>
+      <select id="food" name="food[]" multiple required>
+        <option value="pizza">Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="sushi">Sushi</option>
+        <option value="pasta">Pasta</option>
+        <option value="salad">Salad</option>
+      </select>
+      <!-- <label for="food">Choice of Food (select at least 2):</label>
+      <input type="checkbox" id="pizza" name="food[]" value="pizza">
+      <label for="pizza">Pizza</label>
+      <input type="checkbox" id="burger" name="food[]" value="burger">
+      <label for="burger">Burger</label>
+      <input type="checkbox" id="sushi" name="food[]" value="sushi">
+      <label for="sushi">Sushi</label>
+      <input type="checkbox" id="pasta" name="food[]" value="pasta">
+      <label for="pasta">Pasta</label>
+      <input type="checkbox" id="salad" name="food[]" value="salad">
+      <label for="salad">Salad</label>
+       -->
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <table id="dataTable">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Address</th>
+      <th>Pin Code</th>
+      <th>Gender</th>
+      <th>Food</th>
+      <th>State</th>
+      <th>Country</th>
+    </tr>
+  </table>
+  <script src="DOM_table.js"></script>
+</body>
+</html>
