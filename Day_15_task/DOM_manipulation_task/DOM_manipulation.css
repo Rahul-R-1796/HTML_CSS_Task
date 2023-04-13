@@ -1,0 +1,22 @@
+.page-link {
+  margin-right: 5px; /* Add desired spacing between page links */
+
+}
+.pagination {
+  display: inline-block;
+}
+
+.page-link  {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: red;
+}
+
+.page-link.active {
+  background-color: #afaa4c;
+  color: white;
+}
+
+.page-link:hover:not(.active) {background-color: green;}
