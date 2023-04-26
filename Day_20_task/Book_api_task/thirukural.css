@@ -1,0 +1,26 @@
+body {
+    background-color: #A4978E;
+    text-align: center;
+}
+#button{
+    background-color:whitesmoke;
+    border-radius: 10px;
+    font-size: 20px;
+    border:none;
+}
+#inputdata{
+    width:200px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.tamildiv{
+    background-color: #525B56;
+    color:white;
+}
+
+.englishdiv{
+    background-color: #BE9063;
+    color:white;
+}
